@@ -5,7 +5,7 @@ def header():
   print("----------------------------------------")
   print("              Hangman Game              ")
   print("----------------------------------------")
-  print()
+  print("           Let's play Hangman           ")
 
 def rules():
   print()
@@ -17,18 +17,17 @@ def rules():
 
 
 word_bank = ["Plant", "Cloud","Brick","Flame", "Stone", "Drift",."Crown","Maple", "Shore", ."Bloom","Crack", "Tiger", "Frost",."Brush", "Grain", "Spark", ."Wheel", "Dream", "Torch", "Plain", "Shell", ."Track", ."Ghost","Field",."Crane", "Swift","Amber","Storm","Charm","River"]
-
-
 lives = 6
-print ("Let's play hangman!")
 
-nextround = True
-while nextround:
-  chosen_word = random.choice(word_bank)
-  display = []
-  for letter in chosen_word:
-    display.apprend("_")
-  print(" ".join(display))
-  print("Lives left:", lives)
+
+def game():
+  nextround = True
+  while nextround:
+    chosen_word = random.choice(word_bank)
+    display = []
+    for letter in chosen_word:
+      display.append("_")
+    print(" ".join(display))
+    print("Lives remaining:", lives)
 
 
