@@ -5,6 +5,7 @@ def header():
   print("----------------------------------------")
   print("              Hangman Game              ")
   print("----------------------------------------")
+  print("           Let's play Hangman!          ")
   print()
 
 def rules():
@@ -15,11 +16,25 @@ def rules():
   print("3. Only enter ONE letter at a time")
   print()
 
+def setup():
+  word_bank = ["Plant", "Cloud","Brick","Flame", "Stone", "Drift",."Crown","Maple", "Shore", ."Bloom","Crack", "Tiger", "Frost",."Brush", "Grain", "Spark", ."Wheel", "Dream", "Torch", "Plain", "Shell", ."Track", ."Ghost","Field",."Crane", "Swift","Amber","Storm","Charm","River"]
 
-word_bank = ["Plant", "Cloud","Brick","Flame", "Stone", "Drift",."Crown","Maple", "Shore", ."Bloom","Crack", "Tiger", "Frost",."Brush", "Grain", "Spark", ."Wheel", "Dream", "Torch", "Plain", "Shell", ."Track", ."Ghost","Field",."Crane", "Swift","Amber","Storm","Charm","River"]
+  chosen_word = random.choice(word_bank)
+  lives = 6
+  guesses = []
 
-chosen_word = random.choice(word_bank)
-lives = 6
-print ("Let's play hangman!")
+
+def game()"
+  display = ""
+
+  for character in word:
+      if character in guesses:
+          display += character + " "
+      else:
+          display += "_ "
+
+
+
+
 
 
