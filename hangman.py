@@ -15,8 +15,11 @@ def rules():
   print("3. Only enter ONE letter at a time")
   print()
 
-
-word_bank = ["Plant", "Cloud","Brick","Flame", "Stone", "Drift",."Crown","Maple", "Shore", ."Bloom","Crack", "Tiger", "Frost",."Brush", "Grain", "Spark", ."Wheel", "Dream", "Torch", "Plain", "Shell", ."Track", ."Ghost","Field",."Crane", "Swift","Amber","Storm","Charm","River"]
+word_bank = ["Plant", "Cloud","Brick","Flame", "Stone", "Drift","Crown","Maple", "Shore", "Bloom","Crack",
+             "Tiger", "Frost","Brush", "Grain", "Spark", "Wheel", "Dream", "Torch", "Plain", "Shell", "Track",
+             "Ghost","Field","Crane", "Swift","Amber","Storm","Charm","River","Cream","Glass","Apple",
+             "Apply","Share","Phone","Dread","Drama","Jones","Amaze","Grape","Beach","Snake","Mango","Candy",
+            "Lemon","Light","Music","Storm","Green","Ocean","Chair","Crown","Nurse","Proxy","Zesty","Smile","Bread"]
 lives = 6
 
 
