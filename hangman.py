@@ -74,3 +74,9 @@ def game():
           lives=lives-1
           print("You guessed a wring letter, try again!")
 
+      if lives==0:
+        print("Out of lives, <<< GAVE OVER >>>")
+
+
+# Start the game
+game()
