@@ -46,6 +46,7 @@ def game():
 
     # Keep playing while lives remaine
     while lives>0:
+      print()
       print(" ".join(display))
       print("Lives remaining:", lives)
 
@@ -72,11 +73,13 @@ def game():
       else:
           # Incorrect guess, reduce one live 
           lives=lives-1
-          print("You guessed a wring letter, try again!")
+          print("You guessed a wrong letter, try again!")
 
       if lives==0:
         print("Out of lives, <<< GAVE OVER >>>")
-
+        print("The word was: ", chosen_word)
+        nextround = False
+        
 
 # Start the game
 game()
