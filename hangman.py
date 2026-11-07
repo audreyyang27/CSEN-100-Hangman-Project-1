@@ -52,7 +52,7 @@ def game():
 
       # Check if all letters are guessed
       if "_" not in display:
-          print("Congrats, you won!")
+          print("Congrats!!!, >>> You WON <<<")
           break
 
       # Ask for a letter, convert to lower case to remove case sensitiveness
