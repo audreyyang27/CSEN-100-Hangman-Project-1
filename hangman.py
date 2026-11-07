@@ -81,5 +81,5 @@ def game():
         nextround = False
         
 
-# Start the game
+# Run the game function
 game()
