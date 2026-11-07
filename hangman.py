@@ -32,8 +32,8 @@ def game():
   nextround = True
   while nextround:
     
-    # Choose a random word
-    chosen_word = random.choice(word_bank)
+    # Choose a random word , and convert to lower case, to remove case-sensitiveness
+    chosen_word = random.choice(word_bank).lower()
 
     # Reset lives for each new game
     lives = 6
@@ -55,7 +55,7 @@ def game():
           print("Congrats, you won!")
           break
 
-      # Ask for a letter
+      # Ask for a letter, convert to lower case to remove case sensitiveness
       guess = input("Guess a letter:")
       guess = guess.lower()
 
