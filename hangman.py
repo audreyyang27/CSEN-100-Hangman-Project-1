@@ -52,7 +52,7 @@ def game():
       # Check if all letters are guessed
       if "_" not in display:
           print("Congrats, you won!")
-        break
+          break
 
       # Ask for a letter
       guess = input("Guess a letter:")
